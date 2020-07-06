@@ -1,0 +1,51 @@
+# GRUB2 gfxmenu Linux theme
+
+# Global Property
+title-text: ""
+desktop-image: "background.png"
+desktop-color: "#0168a2"
+terminal-font: "wqy-unibit"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
+# Show the boot menu
++ boot_menu {
+  width = 70
+  height = 264
+  item_width = 70
+  item_height = 70
+  icon_width = 64
+  icon_height = 64
+  item_spacing = 10
+  left = 40%
+  top = 30%
+  item_font = "wqy-unibit"
+  item_color = "#d3d3d3"
+  selected_item_color = "#ffffff"
+  selected_item_pixmap_style = "select_*.png"
+  item_icon_space = 10
+}
+
+# Show a countdown message using the label component
++ label {
+  left = 0
+  top = 97%
+  width = 100%
+  align = "center"
+  id = "__timeout__"
+  color = "#ffffff"
+  font = "wqy-unibit"
+  text = "在 %d 秒内启动"
+}
++ label {
+  left = 0
+  top = 94%
+  width = 100%
+  align = "center"
+  color = "#d3d3d3"
+  font = "wqy-unibit"
+  text = "使用 ↑ 和 ↓ 键移动选择条，Enter 键确认，E 键编辑启动命令，C 键进入命令行"
+}
